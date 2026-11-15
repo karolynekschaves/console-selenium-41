@@ -70,3 +70,17 @@ dotnet test
 dotnet test --filter "FullyQualifiedName~WebFormularioCadastroTest"
 dotnet test --filter "FullyQualifiedName~WebFormularioSelectDatalistTest"
 dotnet test --filter "FullyQualifiedName~WebFormularioEstados
+
+---
+
+## 💡 Observações técnicas
+
+- 🔄 Cada teste abre e fecha seu próprio navegador (`[TestInitialize]` e `[TestCleanup]`), mantendo os testes independentes.
+- 🎨 O input de cor (`type="color"`) abre um seletor nativo do navegador que o Selenium não controla. Por isso o valor é definido com `IJavaScriptExecutor`, disparando os eventos `input` e `change`.
+- 📋 O datalist é um `<input>` com sugestões, então basta usar `SendKeys`.
+
+---
+
+## 👩‍💻 Autora
+
+**Karolyne S** 💖
