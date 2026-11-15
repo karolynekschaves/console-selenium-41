@@ -71,7 +71,7 @@ dotnet test --filter "FullyQualifiedName~WebFormularioCadastroTest"
 dotnet test --filter "FullyQualifiedName~WebFormularioSelectDatalistTest"
 dotnet test --filter "FullyQualifiedName~WebFormularioEstados
 
----
+```
 
 ## 💡 Observações técnicas
 
